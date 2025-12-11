@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML Diagrams Explorer - SEPM Project</title>
+    <link rel="stylesheet" href="styles.css">
+        <style>
+            .nature-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmZmYiIC8+CiAgPGNpcmNsZSBjeD0iMTAlIiBjeT0iMTAlIiByPSI1IiBmaWxsPSIjNDU1IiAvPgogIDxjaXJjbGUgY3g9IjIwJSIgY3k9IjE1JSIgcj0iMyIgZmlsbD0iIzQ1NSIgLz4KICA8Y2lyY2xlIGN4PSIzMCUiIGN5PSI4JSIgcj0iNCIgZmlsbD0iIzQ1NSIgLz4KICA8Y2lyY2xlIGN4PSI0MCUiIGN5PSIxMiUiIHI9IjMiIGZpbGw9IiM0NTUiIC8+CiAgPGNpcmNsZSBjeD0iNTAlIiBjeT0iNiUiIHI9IjQiIGZpbGw9IiM0NTUiIC8+CiAgPGNpcmNsZSBjeD0iNjAlIiBjeT0iMTAlIiByPSIyLjUiIGZpbGw9IiM0NTUiIC8+CiAgPGNpcmNsZSBjeD0iNzAlIiBjeT0iMTUlIiByPSIzLjUiIGZpbGw9IiM0NTUiIC8+CiAgPGNpcmNsZSBjeD0iODAlIiBjeT0iOSUiIHI9IjMiIGZpbGw9IiM0NTUiIC8+CiAgPGNpcmNsZSBjeD0iOTAlIiBjeT0iMTMlIiByPSI0IiBmaWxsPSIjNDU1IiAvPgo8L3N2Zz4K');
+                opacity: 0.1;
+                pointer-events: none;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="nature-overlay"></div>
+        <h1>UML Diagrams Explorer</h1>
+        <p>Innovative Activity for SEPM Subject</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#class-diagram">Class Diagram</a></li>
+            <li><a href="#activity-diagram">Activity Diagram</a></li>
+            <li><a href="#sequence-diagram">Sequence Diagram</a></li>
+            <li><a href="#usecase-diagram">Use Case Diagram</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to UML Diagrams Explorer</h2>
+            <p>This interactive website showcases different UML diagrams used in software engineering. Navigate through the menu to explore each diagram type and learn about their notations.</p>
+            
+            <div class="uml-overview">
+                <h3>What is UML?</h3>
+                <p>Unified Modeling Language (UML) is a standardized modeling language in the field of software engineering. It aims to provide a standard way to visualize the design of a system.</p>
+            </div>
+            
+            <div class="nature-section">
+                <h3>Nature of Software Design</h3>
+                <p>Just like how nature follows patterns and structures, software systems also require well-defined architectures. UML diagrams help us visualize these structural patterns in our software designs.</p>
+                <div class="leaf-icon">🍃</div>
+            </div>
+        </section>
+
+        <section id="class-diagram">
+            <h2>Class Diagram</h2>
+            <div class="diagram-container">
+                <img src="class-diagram-for-bank-atm-system-jkwhovag1-thumb.webp" alt="Class Diagram Example">
+            </div>
+            <div class="notation-info">
+                <h3>Class Diagram Notations</h3>
+                <ul>
+                    <li><strong>Class:</strong> Represented by a rectangle divided into three compartments: class name, attributes, and operations</li>
+                    <li><strong>Attributes:</strong> Listed in the middle compartment in the format: visibility name: type</li>
+                    <li><strong>Operations:</strong> Listed in the bottom compartment in the format: visibility name(parameter: type): return_type</li>
+                    <li><strong>Visibility:</strong> + (public), - (private), # (protected), ~ (package)</li>
+                    <li><strong>Relationships:</strong> Association, Aggregation, Composition, Inheritance, Dependency</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="activity-diagram">
+            <h2>Activity Diagram</h2>
+            <div class="diagram-container">
+                <img src="activity-diagram.svg" alt="Activity Diagram Example">
+            </div>
+            <div class="notation-info">
+                <h3>Activity Diagram Notations</h3>
+                <ul>
+                    <li><strong>Action:</strong> Rounded rectangles representing specific activities</li>
+                    <li><strong>Control Flow:</strong> Arrows showing the sequence of activities</li>
+                    <li><strong>Initial Node:</strong> Solid circle indicating the start of the workflow</li>
+                    <li><strong>Final Node:</strong> Bull's eye (concentric circles) indicating the end of the workflow</li>
+                    <li><strong>Decision Node:</strong> Diamond shape for conditional logic</li>
+                    <li><strong>Fork/Join Node:</strong> Horizontal bar for parallel activities</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sequence-diagram">
+            <h2>Sequence Diagram</h2>
+            <div class="diagram-container">
+                <img src="sequence-diagram.svg" alt="Sequence Diagram Example">
+            </div>
+            <div class="notation-info">
+                <h3>Sequence Diagram Notations</h3>
+                <ul>
+                    <li><strong>Lifeline:</strong> Vertical dashed lines representing objects or actors</li>
+                    <li><strong>Activation Box:</strong> Tall thin rectangles on lifelines showing active periods</li>
+                    <li><strong>Message:</strong> Horizontal arrows between lifelines showing communication</li>
+                    <li><strong>Synchronous Message:</strong> Solid arrow for blocking calls</li>
+                    <li><strong>Asynchronous Message:</strong> Stick arrow for non-blocking calls</li>
+                    <li><strong>Return Message:</strong> Dashed arrow showing return values</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="usecase-diagram">
+            <h2>Use Case Diagram</h2>
+            <div class="diagram-container">
+                <img src="usecase-diagram.svg" alt="Use Case Diagram Example">
+            </div>
+            <div class="notation-info">
+                <h3>Use Case Diagram Notations</h3>
+                <ul>
+                    <li><strong>Actor:</strong> Stick figure representing a role played by a user</li>
+                    <li><strong>Use Case:</strong> Oval shapes representing functionalities</li>
+                    <li><strong>System Boundary:</strong> Rectangle frame enclosing all use cases</li>
+                    <li><strong>Association:</strong> Solid line connecting actors to use cases</li>
+                    <li><strong>Include Relationship:</strong> Dashed arrow with <<include>> stereotype</li>
+                    <li><strong>Extend Relationship:</strong> Dashed arrow with <<extend>> stereotype</li>
+                    <li><strong>Generalization:</strong> Solid line with triangle arrow for inheritance</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>SEPM Innovative Activity - UML Diagrams Explorer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

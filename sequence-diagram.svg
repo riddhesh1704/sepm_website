@@ -1,0 +1,68 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lifelines -->
+  <line x1="100" y1="50" x2="100" y2="350" stroke="black" stroke-dasharray="5,5"/>
+  <line x1="250" y1="50" x2="250" y2="350" stroke="black" stroke-dasharray="5,5"/>
+  <line x1="400" y1="50" x2="400" y2="350" stroke="black" stroke-dasharray="5,5"/>
+  <line x1="550" y1="50" x2="550" y2="350" stroke="black" stroke-dasharray="5,5"/>
+  
+  <!-- Actor Boxes -->
+  <rect x="70" y="20" width="60" height="30" fill="transparent" stroke="#2196f3" stroke-width="2" rx="5"/>
+  <text x="100" y="40" font-family="Arial" font-size="12" text-anchor="middle">User</text>
+  
+  <rect x="220" y="20" width="60" height="30" fill="transparent" stroke="#2196f3" stroke-width="2" rx="5"/>
+  <text x="250" y="40" font-family="Arial" font-size="12" text-anchor="middle">Browser</text>
+  
+  <rect x="370" y="20" width="60" height="30" fill="transparent" stroke="#2196f3" stroke-width="2" rx="5"/>
+  <text x="400" y="40" font-family="Arial" font-size="12" text-anchor="middle">Server</text>
+  
+  <rect x="520" y="20" width="60" height="30" fill="transparent" stroke="#2196f3" stroke-width="2" rx="5"/>
+  <text x="550" y="40" font-family="Arial" font-size="12" text-anchor="middle">Database</text>
+  
+  <!-- Activation Boxes -->
+  <!-- User activation -->
+  <rect x="95" y="80" width="10" height="30" fill="transparent" stroke="#2196f3" stroke-width="1"/>
+  
+  <!-- Browser activations -->
+  <rect x="245" y="80" width="10" height="30" fill="transparent" stroke="#2196f3" stroke-width="1"/>
+  <rect x="245" y="130" width="10" height="30" fill="transparent" stroke="#2196f3" stroke-width="1"/>
+  <rect x="245" y="230" width="10" height="30" fill="transparent" stroke="#2196f3" stroke-width="1"/>
+  
+  <!-- Server activations -->
+  <rect x="395" y="130" width="10" height="30" fill="transparent" stroke="#2196f3" stroke-width="1"/>
+  <rect x="395" y="180" width="10" height="30" fill="transparent" stroke="#2196f3" stroke-width="1"/>
+  
+  <!-- Database activation -->
+  <rect x="545" y="180" width="10" height="30" fill="transparent" stroke="#2196f3" stroke-width="1"/>
+  
+  <!-- Messages -->
+  <!-- 1. User -> Browser -->
+  <line x1="105" y1="95" x2="245" y2="95" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="175" y="85" font-family="Arial" font-size="12" text-anchor="middle">1. Request Page</text>
+  
+  <!-- 2. Browser -> Server -->
+  <line x1="255" y1="145" x2="395" y2="145" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="325" y="135" font-family="Arial" font-size="12" text-anchor="middle">2. HTTP GET Request</text>
+  
+  <!-- 3. Server -> Database -->
+  <line x1="405" y1="195" x2="545" y2="195" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="475" y="185" font-family="Arial" font-size="12" text-anchor="middle">3. Query Data</text>
+  
+  <!-- 4. Database -> Server -->
+  <line x1="545" y1="215" x2="405" y2="215" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="475" y="205" font-family="Arial" font-size="12" text-anchor="middle">4. Return Data</text>
+  
+  <!-- 5. Server -> Browser -->
+  <line x1="395" y1="245" x2="255" y2="245" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="325" y="235" font-family="Arial" font-size="12" text-anchor="middle">5. HTTP Response</text>
+  
+  <!-- 6. Browser -> User -->
+  <line x1="245" y1="265" x2="105" y2="265" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="175" y="255" font-family="Arial" font-size="12" text-anchor="middle">6. Display Page</text>
+  
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+</svg>

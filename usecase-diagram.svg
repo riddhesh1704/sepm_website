@@ -1,0 +1,88 @@
+<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- System Boundary -->
+  <rect x="150" y="50" width="500" height="400" fill="transparent" stroke="#2196f3" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="40" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Online Shopping System</text>
+  
+  <!-- Actors -->
+  <!-- Customer Actor -->
+  <circle cx="100" cy="150" r="15" fill="#fff" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="165" x2="100" y2="200" stroke="#000" stroke-width="2"/>
+  <line x1="85" y1="175" x2="115" y2="175" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="200" x2="85" y2="220" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="200" x2="115" y2="220" stroke="#000" stroke-width="2"/>
+  <text x="100" y="240" font-family="Arial" font-size="14" text-anchor="middle">Customer</text>
+  
+  <!-- Admin Actor -->
+  <circle cx="100" cy="350" r="15" fill="#fff" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="365" x2="100" y2="400" stroke="#000" stroke-width="2"/>
+  <line x1="85" y1="375" x2="115" y2="375" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="400" x2="85" y2="420" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="400" x2="115" y2="420" stroke="#000" stroke-width="2"/>
+  <text x="100" y="440" font-family="Arial" font-size="14" text-anchor="middle">Admin</text>
+  
+  <!-- Use Cases -->
+  <!-- Browse Products -->
+  <ellipse cx="300" cy="100" rx="80" ry="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="300" y="105" font-family="Arial" font-size="14" text-anchor="middle">Browse Products</text>
+  
+  <!-- Search Products -->
+  <ellipse cx="500" cy="100" rx="80" ry="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="500" y="105" font-family="Arial" font-size="14" text-anchor="middle">Search Products</text>
+  
+  <!-- Add to Cart -->
+  <ellipse cx="300" cy="200" rx="80" ry="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="300" y="205" font-family="Arial" font-size="14" text-anchor="middle">Add to Cart</text>
+  
+  <!-- Checkout -->
+  <ellipse cx="500" cy="200" rx="80" ry="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="500" y="205" font-family="Arial" font-size="14" text-anchor="middle">Checkout</text>
+  
+  <!-- View Order History -->
+  <ellipse cx="300" cy="300" rx="80" ry="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="300" y="305" font-family="Arial" font-size="14" text-anchor="middle">View Order History</text>
+  
+  <!-- Manage Products -->
+  <ellipse cx="500" cy="300" rx="80" ry="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="500" y="305" font-family="Arial" font-size="14" text-anchor="middle">Manage Products</text>
+  
+  <!-- Manage Orders -->
+  <ellipse cx="300" cy="400" rx="80" ry="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="300" y="405" font-family="Arial" font-size="14" text-anchor="middle">Manage Orders</text>
+  
+  <!-- Associations -->
+  <!-- Customer to Browse Products -->
+  <line x1="115" y1="175" x2="220" y2="100" stroke="#000" stroke-width="2"/>
+  
+  <!-- Customer to Search Products -->
+  <line x1="115" y1="175" x2="420" y2="100" stroke="#000" stroke-width="2"/>
+  
+  <!-- Customer to Add to Cart -->
+  <line x1="115" y1="175" x2="220" y2="200" stroke="#000" stroke-width="2"/>
+  
+  <!-- Customer to Checkout -->
+  <line x1="115" y1="175" x2="420" y2="200" stroke="#000" stroke-width="2"/>
+  
+  <!-- Customer to View Order History -->
+  <line x1="115" y1="175" x2="220" y2="300" stroke="#000" stroke-width="2"/>
+  
+  <!-- Admin to Manage Products -->
+  <line x1="115" y1="375" x2="420" y2="300" stroke="#000" stroke-width="2"/>
+  
+  <!-- Admin to Manage Orders -->
+  <line x1="115" y1="375" x2="220" y2="400" stroke="#000" stroke-width="2"/>
+  
+  <!-- Include Relationship -->
+  <line x1="420" y1="200" x2="420" y2="100" stroke="#000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="430" y="150" font-family="Arial" font-size="12">&lt;&lt;include&gt;&gt;</text>
+  
+  <!-- Extend Relationship -->
+  <line x1="380" y1="200" x2="380" y2="300" stroke="#000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  <text x="390" y="250" font-family="Arial" font-size="12">&lt;&lt;extend&gt;&gt;</text>
+  
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+</svg>

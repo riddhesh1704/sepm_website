@@ -1,0 +1,76 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Initial Node -->
+  <circle cx="100" cy="100" r="10" fill="black"/>
+  
+  <!-- Action 1 -->
+  <rect x="150" y="80" rx="10" ry="10" width="150" height="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="225" y="105" font-family="Arial" font-size="14" text-anchor="middle">Start Application</text>
+  
+  <!-- Arrow from Initial to Action 1 -->
+  <line x1="110" y1="100" x2="150" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Action 2 -->
+  <rect x="350" y="80" rx="10" ry="10" width="150" height="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="425" y="105" font-family="Arial" font-size="14" text-anchor="middle">User Login</text>
+  
+  <!-- Arrow from Action 1 to Action 2 -->
+  <line x1="300" y1="100" x2="350" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decision Node -->
+  <diamond cx="550" cy="100" points="540,100 550,90 560,100 550,110" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Arrow from Action 2 to Decision -->
+  <line x1="500" y1="100" x2="540" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decision Labels -->
+  <text x="570" y="90" font-family="Arial" font-size="12">Valid</text>
+  <text x="570" y="120" font-family="Arial" font-size="12">Invalid</text>
+  
+  <!-- Action 3 (Success Path) -->
+  <rect x="350" y="30" rx="10" ry="10" width="150" height="40" fill="transparent" stroke="#4caf50" stroke-width="2"/>
+  <text x="425" y="55" font-family="Arial" font-size="14" text-anchor="middle">Access Dashboard</text>
+  
+  <!-- Arrow from Decision to Action 3 -->
+  <line x1="550" y1="90" x2="550" y2="70" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="70" x2="500" y2="70" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Action 4 (Failure Path) -->
+  <rect x="350" y="150" rx="10" ry="10" width="150" height="40" fill="transparent" stroke="#f44336" stroke-width="2"/>
+  <text x="425" y="175" font-family="Arial" font-size="14" text-anchor="middle">Show Error</text>
+  
+  <!-- Arrow from Decision to Action 4 -->
+  <line x1="550" y1="110" x2="550" y2="170" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="170" x2="500" y2="170" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Merge Point -->
+  <circle cx="600" cy="100" r="5" fill="black"/>
+  
+  <!-- Arrow from Action 3 to Merge -->
+  <line x1="500" y1="50" x2="600" y2="50" stroke="black" stroke-width="2"/>
+  <line x1="600" y1="50" x2="600" y2="95" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow from Action 4 to Merge -->
+  <line x1="500" y1="170" x2="600" y2="170" stroke="black" stroke-width="2"/>
+  <line x1="600" y1="170" x2="600" y2="105" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final Action -->
+  <rect x="650" y="80" rx="10" ry="10" width="120" height="40" fill="transparent" stroke="#2196f3" stroke-width="2"/>
+  <text x="710" y="105" font-family="Arial" font-size="14" text-anchor="middle">Main Menu</text>
+  
+  <!-- Arrow from Merge to Final Action -->
+  <line x1="605" y1="100" x2="650" y2="100" stroke="black" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Final Node -->
+  <circle cx="770" cy="100" r="15" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="770" cy="100" r="10" fill="black"/>
+  
+  <!-- Arrow from Final Action to Final Node -->
+  <line x1="770" y1="100" x2="755" y2="100" stroke="black" stroke-width="2"/>
+  
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
+    </marker>
+  </defs>
+</svg>
